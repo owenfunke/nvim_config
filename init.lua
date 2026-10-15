@@ -18,7 +18,7 @@ require("monokai-pro").setup()
 vim.cmd.colorscheme("monokai-pro")
 
 require("mason").setup()
-local lsp_servers = {"lua_ls", "clangd"}
+local lsp_servers = {"lua_ls", "clangd", "ty"}
 
 for _, server in ipairs(lsp_servers) do
 	vim.lsp.enable(server)
